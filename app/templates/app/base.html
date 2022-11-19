@@ -1,0 +1,122 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dairy Products | {% block title %} {% endblock title %}</title>
+
+        <!-- bootstrap css cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'app/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+
+    <meta http-equiv="refresh" content="10">
+
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="{% static 'app/images/neel.png' %}" width="70" height="50" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Milk</a></li>
+                  <li><a class="dropdown-item" href="#">Curd</a></li>
+                  <li><a class="dropdown-item" href="#">Milkshake</a></li>
+                  <li><a class="dropdown-item" href="#">Lassi</a></li>
+                  <li><a class="dropdown-item" href="#">Ghee</a></li>
+                  <li><a class="dropdown-item" href="#">Paneer</a></li>
+                  <li><a class="dropdown-item" href="#">Cheese</a></li>
+                  <li><a class="dropdown-item" href="#">Ice-Cream</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link text-white">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link text-white">Contact Us</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown mx-2">
+                <a class="nav-link dropdown-toggle text-white" id="profileDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Suyog
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                    <li><a class="dropdown-item" href="">Profile</a></li>
+                    <li><a class="dropdown-item" href="">Orders</a></li>
+                    <li><a class="dropdown-item" href="">Change Password</a></li>
+                    <li><a class="dropdown-item" href="">Logout</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link text-white">Cart 4</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link text-white">Wishlist 4</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link text-white">Login</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link text-white">Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+
+
+      {% block main-content %}
+
+      {% endblock main-content %}
+
+
+      <footer>
+        Copyright : 2022 || Suyog Ojha
+      </footer>
+
+
+
+
+        <!-- bootstrap js cdn  -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+
+            <!-- jquey cdn  -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+        <!-- custom cdn  -->
+        <script src="{% static 'app/js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'app/js/all.min.js' %}"></script>
+        <script src="{% static 'app/js/myscript.js' %}"></script>
+</body>
+</html>
