@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="{% static 'app/css/all.min.css' %}">
     <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
 
-    <meta http-equiv="refresh" content="10">
 
 </head>
 <body>
-    
+  
+
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
@@ -61,7 +62,7 @@
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
-
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item dropdown mx-2">
                 <a class="nav-link dropdown-toggle text-white" id="profileDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -88,19 +89,29 @@
             </li>
           </ul>
         </div>
+        </div>
       </nav>
 
+     
+
+      {% block banner_slider %}
+      {% endblock  %}
+      
+      
+      {% block information %}
+      {% endblock  %}
+    
+      {% block main_content %} 
+      {% endblock %}
+    
+    
+    
 
 
 
 
 
-      {% block main-content %}
-
-      {% endblock main-content %}
-
-
-      <footer>
+      <footer class="container-fluid fixed-bottom bg-success text-center p-2 mt-5">
         Copyright : 2022 || Suyog Ojha
       </footer>
 
